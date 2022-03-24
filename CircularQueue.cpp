@@ -44,7 +44,7 @@ public:
 			itemCount++;
 		}
 		else {
-			rear=(rear+1)&6;	
+			rear=(rear+1)%6;	
 			arr[rear]=value;
 			itemCount++;
 		}
