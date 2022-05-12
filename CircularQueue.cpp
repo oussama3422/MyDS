@@ -2,14 +2,14 @@
 
 using namespace std;
 
-class CircularQueue{
+class Queue{
 private:
 	int rear;
 	int front;
 	int arr[6];
 	int itemCount;
 public:
-	CircularQueue(){
+	Queue(){
 		itemCount=0;
 		rear=-1;
 		front=-1;
@@ -89,7 +89,7 @@ public:
 
 
 int main(){
-	CircularQueue Q1;
+	Queue Q1;
 		int option,position,value;
 	do{
 		cout<<"\nWhat Operation do you want to perform?Select Optiion number.Enter 0 to exit";

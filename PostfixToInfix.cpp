@@ -14,7 +14,17 @@ bool isOperand(char c)
 		return false;
 	}
 }
-
+bool isOpertor(char c)
+{
+	if(c=='+'|| c=='-' || c=='*' || c=='^' || c=='/')
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
 string PostfixToInfix(string postfix)
 {
 	stack<string> s;
@@ -40,6 +50,7 @@ string PostfixToInfix(string postfix)
 	}
 	return s.top();
  }
+ 
 
 int main()
 {
